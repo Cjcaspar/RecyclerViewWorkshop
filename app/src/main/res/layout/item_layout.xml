@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:maxHeight="70dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_textview"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/item_layout"
+        app:layout_constraintLeft_toLeftOf="@id/item_layout"
+        app:layout_constraintRight_toRightOf="@id/item_layout"
+        android:paddingTop="5dp"
+        android:text="Name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary_textview"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/item_layout"
+        app:layout_constraintRight_toRightOf="@id/item_layout"
+        app:layout_constraintTop_toBottomOf="@id/name_textview"
+        android:text="Summary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_type_textview"
+        app:layout_constraintLeft_toLeftOf="@id/item_layout"
+        app:layout_constraintBottom_toBottomOf="@id/item_layout"
+        android:textSize="12sp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:text="Phone Type" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age_textview"
+        app:layout_constraintRight_toRightOf="@id/item_layout"
+        app:layout_constraintTop_toTopOf="@id/item_layout"
+        android:textSize="12sp"
+        android:paddingBottom="3dp"
+        android:paddingRight="3dp"
+        android:text="Age"/>
+
+</android.support.constraint.ConstraintLayout>
